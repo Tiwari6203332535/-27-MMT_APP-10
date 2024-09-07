@@ -7,14 +7,42 @@
 <body>
 <form th:action="@{/get-ticket}">
 Enter Ticket Number :<input type ="text" name ="ticketNum"/>
-<input type="submit" value="Get Ticket">
+<input type="submit" value="Get-ticket">
 </form>
-Name :<p th:text="${ticket.name}"/>
-From :<p th:text="${ticket.from}"/>
-To :<p th:text="${ticket.to}"/>
-Doj :<p th:text="${ticket.doj}"/>
-Status :<p th:text="${ticket.status}"/>
-Cost :<p th:text="${ticket.ticketCoast}"/>
+<table>
+<tr>
+<td>Name:</td>
+<td><p th:text="${ticket.name}"/></td>
+</tr>
+<tr>
+<td>From:</td>
+<td><p th:text="${ticket.from}"/></td>
+</tr>
+<tr>
+<td>To:</td>
+<td><p th:text="${ticket.to}"/></td>
+</tr>
+<tr>
+<td>Doj:</td>
+<td><p th:text="${ticket.doj}"/></td>
+</tr>
+<tr>
+<td>Status:</td>
+<td><p th:text="${ticket.status}"/></td>
+</tr>
+<tr>
+<td>Cost:</td>
+<td><p th:text="${ticket.coast}"/></td>
+</tr>
+<tr>
+<td>TicketNUmber:</td>
+<td><p th:text="${ticket.ticketNum}"/></td>
+</tr>
+<tr>
+<td>TrainNO:</td>
+<td><p th:text="${ticket.trainNum}"/></td>
+</tr>
+</table>
 
 <hr/>
 </body>
